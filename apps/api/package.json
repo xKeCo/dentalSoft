@@ -5,11 +5,10 @@
   "author": "Kevin Collazos",
   "license": "MIT",
   "private": true,
-  "type": "module",
   "scripts": {
     "tsc": "tsc",
     "dev": "ts-node-dev src/index.ts",
-    "start": "node src/index.ts"
+    "start": "ts-node src/index.ts"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -25,6 +24,7 @@
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/jsonwebtoken": "^9.0.2",
+    "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
     "tsconfig": "*",
     "typescript": "^5.1.6"
