@@ -38,6 +38,6 @@ app.use(express.json());
 app.use('/api/auth', authRouter);
 
 // Port
-app.listen(process.env.PORT, () => {
-  console.log(`App listening on port ${process.env.PORT}!`);
+app.listen(4000, () => {
+  console.log('App listening on port 4000!');
 });
