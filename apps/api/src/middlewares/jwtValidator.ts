@@ -20,8 +20,8 @@ export const jwtValidator = (req: any, res = response, next: any) => {
   try {
     const { uid, name } = jwt.verify(
       token,
-      // process.env.SECRET_JWT_SEED ||
-      '3sTeS3cReT0-s33Ddd-D3SaRr0lL0pArA-UAOPR0j3Ct-b4Ck3end'
+      process.env.SECRET_JWT_SEED as string
+      // '3sTeS3cReT0-s33Ddd-D3SaRr0lL0pArA-UAOPR0j3Ct-b4Ck3end'
     ) as JwtPayload;
 
     req.uid = uid;
