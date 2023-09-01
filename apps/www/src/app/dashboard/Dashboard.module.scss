@@ -1,0 +1,14 @@
+@import '../../styles/media_queries';
+
+.container {
+  width: calc(100% - 210px);
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: var(--color1);
+}
+
+.flex {
+  display: flex;
+  background-color: var(--color2);
+}

@@ -1,0 +1,45 @@
+.Sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 100%;
+  border-right: 1px solid var(--separator-color);
+  max-width: 217px;
+  width: 100%;
+  background-color: var(--color2);
+  transition: all 0.1s ease-out 0s;
+
+  &__closed {
+    max-width: 210px;
+    transition: box-shadow 0.15s ease-out 0s;
+    backdrop-filter: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 16px;
+    height: calc(100% - 12px);
+    margin: 6px;
+    border-radius: 5px;
+    border: 1px solid var(--separator-color);
+    background-color: var(--color1);
+  }
+
+  &__container {
+    width: 217px;
+    left: 0px;
+    top: 0px;
+    z-index: 96;
+    bottom: 0px;
+    transition: all 0.2s ease-out 0s;
+
+    &__closed {
+      left: -215px;
+      top: 47px;
+      position: fixed;
+      z-index: 96;
+      bottom: 0px;
+
+      &:hover {
+        left: 0px;
+      }
+    }
+  }
+}

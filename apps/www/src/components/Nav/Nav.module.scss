@@ -1,0 +1,15 @@
+.Nav {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 0px;
+  flex-shrink: 0;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  max-width: 100vw;
+  min-height: 57px;
+  transition: opacity 0.05s ease-in-out 0s;
+  border-bottom: 1px solid var(--separator-color);
+  padding-right: 24px;
+  padding-left: 30px;
+}
